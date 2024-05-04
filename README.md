@@ -70,7 +70,7 @@ Any other file or folder must be ignored.
 
 ### Table header
 
-**The table header file** contains names of the table column and their types. Each line of table header contains the type, name, and the modifiers of the columns.
+**The table header file** contains names of the table column and their types. Each line of table header contains the type, name, and the modifiers of the columns. The modifier list can be empty.
 
 ```
 // Header.qhead:
@@ -83,6 +83,8 @@ int                                         ("Id",                              
 | Type of column (here, it is integer)       | The column name (here, it is Id)     | The list of modifiers (here, it is one modifier: incrementing)
  \____________________________________        \________________________________      \______________________________________________________________
 ```
+
+The column definition is a Quark query language expression. <a href="#expressions">Learn more about Quark QL expressions</a>.
 
 ### Records
 
