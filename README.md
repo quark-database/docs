@@ -6,7 +6,7 @@
 
 <h1 align="left">About Quark Documentation</h1>
 
-The Quark Documentation describes not the actual implementation of Quark, but the specification of Quark products. Effictively this is a set of guidelines about how to create your own Quark!
+The Quark Documentation describes not the actual implementation of Quark, but the specification of Quark products. Effectively this is a set of guidelines about how to create your own Quark!
 
 <details open>
 <summary><kbd>Table of contents</kbd></summary>
