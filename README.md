@@ -21,7 +21,7 @@ The Quark Documentation describes not the actual implementation of Quark, but th
 <h2 id="database-management-specification">📚 Database Management Specification</h2>
 
 > [!CAUTION]
-> 🚧 The query language specification will soon be defined.
+> 🚧 The database management specification will soon be defined.
 
 <h2 id="database-management-specification">✍️ Query Language Specification</h2>
 
