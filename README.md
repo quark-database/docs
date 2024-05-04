@@ -49,7 +49,7 @@ Any other file or folder must be ignored.
 
 **The table header file** contains names of the table column and their types.
 
-A record is a set of cells. Each record contains zero, one, or more values called cells. Effectively each cell is named because of the table header:
+**A record** is a set of cells. Each record contains zero, one, or more values called cells. Effectively each cell is named because of the table header:
 
 ```
 // Header.qhead:
@@ -58,15 +58,44 @@ str("Name")
 int("Age", positive)
 
 // Records.qrecs
-1,"Anatoly",22
-2,"Aleksandr",21
-3,"Egor",22
+"1","Anatoly",22
+"2","Aleksandr",21
+"3","Egor",22
 
 
 1,                              "Anatoly",                    22
 ^                               ^                             ^
 | Considered to be an Id.       | Considered to be a Name.    | Considered to be an Age.
  \_________________________      \_____________________        \_________________________________
+```
+
+**A record inside a record file** is several double-quoted strings separated with commas:
+
+```
+"this is a string","123","true"
+```
+
+Even though some strings can be stored without quotes, and be not misrecognized (for example, `"strings without commas"`), they must be double-quoted anyways. The quotation mark can be stored into a cell via escaping:
+```
+                              V              V Just put the backslash in front of the symbols to espace them!
+...,"Hi, do you know the book \"War and Peace\"?",...
+```
+
+Besides the quotation marks, there is a line break (`\n`) that can be escaped. To store backslash itself, escape it (`\\`).
+Any other character cannot be escaped, and is an error.
+
+Inside one table, each record must contain an equal count of cells, same as columns in the table header. It means that the following example is an error:
+
+```
+// Header.qhead:
+int("Id", incrementing)
+str("Name")
+int("Age", positive)
+
+// Records.qrecs
+"1","Anatoly",22,"Hello"    <-- ❌ The 4th cell is redundant.
+"2","Aleksandr"             <-- ❌ The 3rd cell is missing.
+"3","Egor",22               <-- ✅ Ok!
 ```
 
 <h2 id="database-management-specification">✍️ Query Language Specification</h2>
