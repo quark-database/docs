@@ -61,9 +61,28 @@ Any other file or folder must be ignored.
 
 **The table records file** contains all the records. Each line of the file represents one record. 
 
+```
+// Records.qrecs
+"1","Anatoly",22
+"2","Aleksandr",21
+"3","Egor",22
+```
+
 ### Table header
 
-**The table header file** contains names of the table column and their types.
+**The table header file** contains names of the table column and their types. Each line of table header contains the type, name, and the modifiers of the columns.
+
+```
+// Header.qhead:
+int("Id", incrementing)
+str("Name")
+int("Age", positive)
+
+int                                         ("Id",                                  incrementing)
+^                                            ^                                      ^
+| Type of column (here, it is integer)       | The column name (here, it is Id)     | The list of modifiers (here, it is one modifier: incrementing)
+ \____________________________________        \________________________________      \______________________________________________________________
+```
 
 ### Records
 
