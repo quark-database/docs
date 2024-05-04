@@ -20,8 +20,54 @@ The Quark Documentation describes not the actual implementation of Quark, but th
 
 <h2 id="database-management-specification">📚 Database Management Specification</h2>
 
-> [!CAUTION]
-> 🚧 The database management specification will soon be defined.
+**Quark** is a relational database management system. It means that the instance of Quark DBMS contains multiple databases with tables inside. Every element, which is any named entity inside Quark, including databases, tables, etc., of the Quark DBMS hierarchy must be named in a special capitalized case.
+
+**The capitalized case** used in Quark naming requires words to be capitalized and separated with spaces. The words must only contain latin letters, and digits. Words are allowed to be uppercase, but only if they are abbreviations. 
+
+**A database** is a named set of tables. In Quark, each database is a folder. The folder name is considered to be the name of database. All the databases must be stored in one folder (canonically named `Databases`). Every folder inside the database is considered to be a table of this database. 
+
+**A table** is a named set of records, and information about columns. A table, like databases, is a folder, which is contained by a database. A table is structured the following way:
+
+```
+My Database                     <-- The database folder
+|
+|---- Users                     <-- The table folder
+    |
+    |---- Variables             <-- The variables folder
+    |   |
+    |   |---- Next Id.qvar
+    |   |---- Next Token.qvar
+    |   |---- ...
+    |
+    |---- Records.qrecs         <-- The records file of the table
+    |---- Header.qhead          <-- The header file of the table
+```
+
+Any other file or folder must be ignored.
+
+**The table records file** contains all the records. Each line of the file represents one record. 
+
+**The table header file** contains names of the table column and their types.
+
+A record is a set of cells. Each record contains zero, one, or more values called cells. Effectively each cell is named because of the table header:
+
+```
+// Header.qhead:
+int("Id", incrementing)
+str("Name")
+int("Age", positive)
+
+// Records.qrecs
+1,"Anatoly",22
+2,"Aleksandr",21
+3,"Egor",22
+
+
+1,                              "Anatoly",                    22
+^                               ^                             ^
+| Considered to be an Id.       | Considered to be a Name.    | Considered to be an Age.
+ \_________________________      \_____________________        \_________________________________
+```
 
 <h2 id="database-management-specification">✍️ Query Language Specification</h2>
 
