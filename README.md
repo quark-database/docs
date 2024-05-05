@@ -167,6 +167,14 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 #### Create a database
 
+##### Parameters
+
+* 📦 `name` of type `str` - the name of a database;
+
+##### Errors
+
+- ❌ 
+
 #### Rename a database
 
 #### List databases
