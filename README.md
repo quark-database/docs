@@ -168,7 +168,7 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 #### Create a database
 
-Creates a new database with a provided name.
+🔧 `create database` - creates a new database with a provided name.
 
 ##### Parameters
 
