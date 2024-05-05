@@ -1,4 +1,4 @@
-#### 
+#### Get a variable value
 
 🔧 `` - .
 

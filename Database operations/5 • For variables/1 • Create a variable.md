@@ -1,4 +1,4 @@
-#### 
+#### Create a variable
 
 🔧 `` - .
 

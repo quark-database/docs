@@ -1,4 +1,4 @@
-#### 
+#### Grant a permission to a token
 
 🔧 `` - .
 

@@ -1,4 +1,4 @@
-#### 
+#### Clone a database skeleton
 
 🔧 `` - .
 

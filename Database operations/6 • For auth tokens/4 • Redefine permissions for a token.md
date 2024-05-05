@@ -1,4 +1,4 @@
-#### 
+#### Redefine permissions for a token
 
 🔧 `` - .
 

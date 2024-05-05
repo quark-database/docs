@@ -1,4 +1,4 @@
-#### 
+#### Delete a database
 
 🔧 `` - .
 

@@ -1,4 +1,4 @@
-#### 
+#### Revoke a permission from a token
 
 🔧 `` - .
 

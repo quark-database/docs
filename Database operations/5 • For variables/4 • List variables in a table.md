@@ -1,4 +1,4 @@
-#### 
+#### List variables in a table
 
 🔧 `` - .
 
