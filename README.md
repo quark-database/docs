@@ -72,7 +72,7 @@ Any other file or folder must be ignored.
 
 ### Table header
 
-**The table header file** contains names of the table column and their types. Each line of table header contains the type, name, and the modifiers of the columns. The modifier list can be empty.
+**The table header file** contains names of the table column and their types. Each line of table header contains the type, name, and the properties of the columns. The property list can be empty.
 
 ```
 // Header.qhead:
@@ -82,7 +82,7 @@ int("Age", positive)
 
 int                                         ("Id",                                  incrementing)
 ^                                            ^                                      ^
-| Type of column (here, it is integer)       | The column name (here, it is Id)     | The list of modifiers (here, it is one modifier: incrementing)
+| Type of column (here, it is integer)       | The column name (here, it is Id)     | The list of properties (here, it is one property: incrementing)
  \____________________________________        \________________________________      \______________________________________________________________
 ```
 
@@ -141,7 +141,7 @@ int("Age", positive)
 
 ### Table variables
 
-**A table variable** contains only one value (for example, a string or an integer). At this moment, in Quark `v4.0`, table variables are only used for the `incrementing` modifier to store the next integer value for an incrementing column, but variables is a great feature with many undiscovered possibilities.
+**A table variable** contains only one value (for example, a string or an integer). At this moment, in Quark `v4.0`, table variables are only used for the `incrementing` property to store the next integer value for an incrementing column, but variables is a great feature with many undiscovered possibilities.
 
 **A table variable file** contains one line - a Quark expression. <a href="#expressions">Learn more about Quark QL expressions</a>.
 
@@ -154,8 +154,7 @@ All the table variable files are stored inside the `Variables` folder inside the
 
 ## 📚 Database Management Specification
 
-> [!CAUTION]
-> 🚧 The query language specification will soon be defined.
+A user can perform operations on databases, tables, records, columns, variables, auth tokens, a cloud,   
 
 ## ✍️ Query Language Specification
 
