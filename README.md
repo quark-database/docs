@@ -12,19 +12,21 @@ The Quark Documentation describes not the actual implementation of Quark, but th
 <summary><kbd>Table of contents</kbd></summary>
 
 
-1. [📚 Database Management Specification](#database-management-specification)
+1. [📁 Databases in File System](#-databases-in-file-system)
     -  [The capitalized case](#the-capitalized-case)
     -  [Databases](#databases)
     -  [Tables](#table)
     -  [Table records](#table-records)
     -  [Table header](#table-header)
     -  [Records](#records)
-2. [✍️ Query Language Specification](#query-language-specification) 
+    -  [Table variables](#table-variables)
+2. [📚 Database Management Specification](#-database-management-specification)
+3. [✍️ Query Language Specification](#️-query-language-specification) 
 
 
 </details>
 
-<h2 id="database-management-specification">📚 Database Management Specification</h2>
+## 📁 Databases in File System
 
 **Quark** is a relational database management system. It means that the instance of Quark DBMS contains multiple databases with tables inside. Every element, which is any named entity inside Quark, including databases, tables, etc., of the Quark DBMS hierarchy must be named in a special capitalized case.
 
@@ -137,7 +139,25 @@ int("Age", positive)
 "3","Egor",22               <-- ✅ Ok!
 ```
 
-<h2 id="database-management-specification">✍️ Query Language Specification</h2>
+### Table variables
+
+**A table variable** contains only one value (for example, a string or an integer). At this moment, in Quark `v4.0`, table variables are only used for the `incrementing` modifier to store the next integer value for an incrementing column, but variables is a great feature with many undiscovered possibilities.
+
+**A table variable file** contains one line - a Quark expression. <a href="#expressions">Learn more about Quark QL expressions</a>.
+
+All the table variable files are stored inside the `Variables` folder inside the table folder.
+
+```
+// Next Id.qvar
+100                         <-- 100 will be taken as an Id for the next insertion. 
+```
+
+## 📚 Database Management Specification
+
+> [!CAUTION]
+> 🚧 The query language specification will soon be defined.
+
+## ✍️ Query Language Specification
 
 > [!CAUTION]
 > 🚧 The query language specification will soon be defined.
