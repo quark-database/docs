@@ -21,22 +21,21 @@ The Quark Documentation describes not the actual implementation of Quark, but th
   - [Table variables](#table-variables)
 - [📚 Database Management Specification](#-database-management-specification)
   - [Operations for databases](#operations-for-databases)
-    - [Create a database](#create-a-database)
+    - [Rename a database](#rename-a-database)
       - [Parameters](#parameters)
       - [Success message](#success-message)
       - [Reports](#reports)
       - [Result](#result)
-    - [Rename a database](#rename-a-database)
+    - [List databases](#list-databases)
       - [Parameters](#parameters-1)
       - [Success message](#success-message-1)
       - [Reports](#reports-1)
       - [Result](#result-1)
-    - [List databases](#list-databases)
+    - [Clone a database](#clone-a-database)
       - [Parameters](#parameters-2)
       - [Success message](#success-message-2)
       - [Reports](#reports-2)
       - [Result](#result-2)
-    - [Clone a database](#clone-a-database)
     - [Clone a database skeleton](#clone-a-database-skeleton)
     - [List tables in a database](#list-tables-in-a-database)
     - [Clear a database](#clear-a-database)
@@ -219,78 +218,6 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 ### Operations for databases
 
-#### Create a database
-
-🔧 `create database` - creates a new database with a provided name.
-
-##### Parameters
-
-* 📦 `name` of type `str` - the name of a database;
-
-##### Success message
-
-```
-✅  A new database $name$ was created. Now you can create tables with `create table "$name$.Table Name": columns = [];`
-```
-
-##### Reports
-
-1. Database already exists
-```
-❌  An error occurred in Quark.
-
-The context:  You was trying to create a database;
-The error:    The database with the name $name$ already exists;
-What to do:   Please, consider another name for your database;
-
-Try following these steps:
-    1.  Run `list databases`
-    2.  Come up with a name which is not in the list
-    3.  Rerun `create database` with a new name
-
-Doesn't work? Ask a question!
-https://github.com/quark-database/cloud/issues
-```
-
-2. Database cannot have a OS-reserved name
-```
-❌  An error occurred in Quark.
-
-The context:  You was trying to create a database;
-The error:    The $name$ is a reserved Windows file name;
-What to do:   Please, consider another name for your database;
-
-Try following these steps:
-    1.  Open Microsoft article: https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
-    2.  Find the list of reserved file names.
-    3.  Come up with a name which is not in the list.
-    4.  Rerun `create database` with a new name.
-
-Doesn't work? Ask a question!
-https://github.com/quark-database/cloud/issues
-```
-
-3. Database folder path would be too long `🪟 Windows only`
-```
-❌  An error occurred in Quark.
-
-The context:  You was trying to create a database;
-The error:    The path would be too long;
-What to do:   Please, move the Databases folder somewhere higher in your file system;
-
-Try following these steps:
-    1.  Find a new folder for Databases folder.
-    2.  Copy the path to the folder you've chosen. It must be shorter than 256 characters.
-    3.  Run `move databases folder to "PASTE PATH HERE";`.
-
-
-Doesn't work? Ask a question!
-https://github.com/quark-database/cloud/issues
-```
-
-##### Result
-
-🚫 This instruction returns no result.
 
 #### Rename a database
 
@@ -372,6 +299,81 @@ https://github.com/quark-database/cloud/issues
 
 ##### Parameters
 
+🚫 This instruction takes no parameters.
+
+##### Success message
+
+```
+✅  The database $name$ is now named $newname$.`
+```
+
+##### Reports
+
+1. Database already exists
+```
+❌  An error occurred in Quark.
+
+The context:  You was trying to rename a database $name$ to $newname$;
+The error:    The database with the name $newname$ already exists;
+What to do:   Please, consider another name for your database;
+
+Try following these steps:
+    1.  Run `list databases`;
+    2.  Come up with a name which is not in the list;
+    3.  Rerun `rename database` with a new name;
+
+Doesn't work? Ask a question!
+https://github.com/quark-database/cloud/issues
+```
+
+2. Database cannot have a OS-reserved name
+```
+❌  An error occurred in Quark.
+
+The context:  You was trying to rename a database $name$ to $newname$;
+The error:    The $newname$ is a reserved Windows file name;
+What to do:   Please, consider another name for your database;
+
+Try following these steps:
+    1.  Open Microsoft article: https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
+    2.  Find the list of reserved file names.
+    3.  Come up with a name which is not in the list.
+    4.  Rerun `create database` with a new name.
+
+Doesn't work? Ask a question!
+https://github.com/quark-database/cloud/issues
+```
+
+3. Database folder path would be too long `🪟 Windows only`
+```
+❌  An error occurred in Quark.
+
+The context:  You was trying to rename a database $name$ to $newname$;
+The error:    The path would be too long;
+What to do:   Please, move the Databases folder somewhere higher in your file system;
+
+Try following these steps:
+    1.  Find a new folder for Databases folder.
+    2.  Copy the path to the folder you've chosen. It must be shorter than 256 characters.
+    3.  Run `move databases folder to "PASTE PATH HERE";`.
+
+
+Doesn't work? Ask a question!
+https://github.com/quark-database/cloud/issues
+```
+
+##### Result
+
+|  `Database name` of type `str`  |
+|:-------------------------------:|
+| The database names of the cloud |
+
+#### Clone a database
+
+🔧 `clone database` - lists all the databases.
+
+##### Parameters
+
 * 📦 `name` of type `str` - the name of a database;
 * 📦 `to` of type `str` - a new name of the database;
 
@@ -442,8 +444,6 @@ https://github.com/quark-database/cloud/issues
 |  `Database name` of type `str`  |
 |:-------------------------------:|
 | The database names of the cloud |
-
-#### Clone a database
 
 #### Clone a database skeleton
 
