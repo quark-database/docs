@@ -154,7 +154,21 @@ All the table variable files are stored inside the `Variables` folder inside the
 
 ## 📚 Database Management Specification
 
-A user can perform operations on databases, tables, records, columns, variables, auth tokens, a cloud,   
+A user can perform operations on databases, tables, records, columns, variables, auth tokens, and a cloud.
+
+### Operations for databases
+
+### Operations for tables
+
+### Operations for records
+
+### Operations for columns
+
+### Operations for variables
+
+### Operations for auth tokens
+
+### Operations for a cloud
 
 ## ✍️ Query Language Specification
 
