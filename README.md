@@ -165,6 +165,18 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 ### Operations for databases
 
+#### Create a database
+
+#### Rename a database
+
+#### List databases
+
+#### Clone a database
+
+#### Clone a database skeleton
+
+#### List tables in a database
+
 ### Operations for tables
 
 ### Operations for records
