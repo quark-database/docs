@@ -29,6 +29,7 @@ The Quark Documentation describes not the actual implementation of Quark, but th
     - [Operations for auth tokens](#operations-for-auth-tokens)
     - [Operations for a cloud](#operations-for-a-cloud)
 3. [✍️ Query Language Specification](#️-query-language-specification) 
+4. [❌ Error Specification](#-error-specification) 
 
 
 </details>
@@ -273,3 +274,34 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 > [!CAUTION]
 > 🚧 The query language specification will soon be defined.
+
+## ❌ Error Specification
+
+**Errors** must be descriptive in any computer system due to their purpose: describe the problem and help to find a fixing solution. The errors in Quark are based on reports.
+
+### Reports
+
+**A report** is an extension for exceptions, which contains more information about the problematic situation. Besides the error message, there are several messages in it in addition:
+
+* **A context** is an environment of the situation, in what circumstances the problem was born. For example, `The calculator was trying to calculate the expression value`.
+* **An error message** is a good old exception message. Describe here the situation, the error itself. For example, `The division by zero is prohibited`. 
+* **A piece of advice** is what a user should do to fix the problem. `Please, do not enter zeros for the division operator.`
+* **Fix steps** are the steps to fix the problem. In other words, it is a piece of advice, but split to a set of steps. Since a piece of advice is enough, an empty list of steps can be passed.
+
+For example, this is how a string formatted report would look:
+
+```
+❌  An error occurred in Quark.
+
+The context:  The server was trying to launch;
+The error:    The port is configuration is missing;
+What to do:   Please, add the port to a configuration;
+
+Try following these steps:
+    1.  Open the configuration file `D:/Quark Cloud/Configuration.json`
+    2.  Find the `port` option (if it's not here, add it)
+    3.  Set the `port` to any port you would like to use (I recommend to set it to 10000).
+
+Doesn't work? Ask a question!
+https://github.com/quark-database/cloud/issues
+```
