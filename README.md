@@ -177,6 +177,10 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 #### List tables in a database
 
+#### Clear a database
+
+#### Delete a database
+
 ### Operations for tables
 
 ### Operations for records
