@@ -183,15 +183,83 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 ### Operations for tables
 
+#### Create a table
+
+#### Rename a table
+
+#### List tables
+
+#### Clone a table
+
+#### Clone a table skeleton
+
+#### List tables in a table
+
+#### Clear a table
+
+#### Delete a table
+
 ### Operations for records
+
+#### Change records
+
+#### Count records
+
+#### Insert a record
+
+#### Select a record
+
+#### Delete records
 
 ### Operations for columns
 
+#### Create a column
+
+#### Rename a column
+
+#### Swap columns
+
+#### Reorder columns
+
+#### List columns
+
+#### Delete a column
+
 ### Operations for variables
+
+#### Create a variable
+
+#### Get a variable value
+
+#### Set a variable value
+
+#### List variables in a table
+
+#### Delete a variable
 
 ### Operations for auth tokens
 
+#### Create a token
+
+#### Grant a permission to a token
+
+#### Revoke a permission to a token
+
+#### Redefine permissions for a token
+
+#### Delete a token
+
 ### Operations for a cloud
+
+#### Get a server name
+
+#### Rename a server
+
+#### Evaluate Quark expression
+
+#### Change the server port
+
+#### Secret instruction
 
 ## ✍️ Query Language Specification
 
