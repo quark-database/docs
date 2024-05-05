@@ -21,6 +21,13 @@ The Quark Documentation describes not the actual implementation of Quark, but th
     -  [Records](#records)
     -  [Table variables](#table-variables)
 2. [📚 Database Management Specification](#-database-management-specification)
+    - [Operations for databases](#operations-for-databases)
+    - [Operations for tables](#operations-for-tables)
+    - [Operations for records](#operations-for-records)
+    - [Operations for columns](#operations-for-columns)
+    - [Operations for variables](#operations-for-variables)
+    - [Operations for auth tokens](#operations-for-auth-tokens)
+    - [Operations for a cloud](#operations-for-a-cloud)
 3. [✍️ Query Language Specification](#️-query-language-specification) 
 
 
