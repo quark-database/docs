@@ -168,9 +168,17 @@ A user can perform operations on databases, tables, records, columns, variables,
 
 #### Create a database
 
+Creates a new database with a provided name.
+
 ##### Parameters
 
 * 📦 `name` of type `str` - the name of a database;
+
+##### Success message
+
+```
+✅  A new database $name$ was created. Now you can create tables with `create table "$name$.Table Name": columns = [];`
+```
 
 ##### Reports
 
