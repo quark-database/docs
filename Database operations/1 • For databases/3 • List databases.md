@@ -18,6 +18,6 @@
 
 ##### Result
 
-|  `Database name` of type `str`  |
+|  `Database Name` of type `str`  |
 |:-------------------------------:|
 | The database names of the cloud |
