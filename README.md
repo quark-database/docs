@@ -254,7 +254,7 @@ A user can perform operations on databases, tables, records, columns, variables,
 #### [🔧 Grant a permission to a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/2%20%E2%80%A2%20Grant%20a%20permission%20to%20a%20token.md)
 #### [🔧 Revoke a permission from a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/3%20%E2%80%A2%20Revoke%20a%20permission%20from%20a%20token.md)
 #### [🔧 Redefine permissions for a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/4%20%E2%80%A2%20Redefine%20permissions%20for%20a%20token.md)
-#### [🔧 Delete a token](https://github.com.quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/5%20%E2%80%A2%20Delete%20a%20token.md)
+#### [🔧 Delete a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/5%20%E2%80%A2%20Delete%20a%20token.md)
 
 ### Operations for the cloud
 
