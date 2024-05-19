@@ -29,33 +29,39 @@ The Quark Documentation describes not the actual implementation of Quark, but th
     - [List tables in a database](#list-tables-in-a-database)
     - [Clear a database](#clear-a-database)
     - [Delete a database](#delete-a-database)
+  - [Operations for tables](#operations-for-tables)
     - [Create a table](#create-a-table)
     - [Rename a table](#rename-a-table)
     - [Clone a table](#clone-a-table)
     - [Clone a table skeleton](#clone-a-table-skeleton)
     - [Clear a table](#clear-a-table)
     - [Delete a table](#delete-a-table)
+  - [Operations for records](#operations-for-records)
     - [Change records](#change-records)
     - [Count records](#count-records)
     - [Insert a record](#insert-a-record)
     - [Select records](#select-records)
     - [Delete records](#delete-records)
+  - [Operations for columns](#operations-for-columns)
     - [Create a column](#create-a-column)
     - [Rename a column](#rename-a-column)
     - [Swap columns](#swap-columns)
     - [Reorder columns](#reorder-columns)
     - [List columns](#list-columns)
     - [Delete a column](#delete-a-column)
+  - [Operations for variables](#operations-for-variables)
     - [Create a variable](#create-a-variable)
     - [Get a variable value](#get-a-variable-value)
     - [Set a variable value](#set-a-variable-value)
     - [List variables in a table](#list-variables-in-a-table)
     - [Delete a variable](#delete-a-variable)
+  - [Operations for tokens](#operations-for-tokens)
     - [Create a token](#create-a-token)
     - [Grant a permission to a token](#grant-a-permission-to-a-token)
     - [Revoke a permission from a token](#revoke-a-permission-from-a-token)
     - [Redefine permissions for a token](#redefine-permissions-for-a-token)
     - [Delete a token](#delete-a-token)
+  - [Operations for the cloud](#operations-for-the-cloud)
     - [Get a cloud name](#get-a-cloud-name)
     - [Rename a cloud](#rename-a-cloud)
     - [Evaluate expression](#evaluate-expression)
@@ -208,6 +214,8 @@ A user can perform operations on databases, tables, records, columns, variables,
 #### [Clear a database](https://github.com/quark-database/docs/blob/main/Database%20operations/1%20%E2%80%A2%20For%20databases/7%20%E2%80%A2%20Clear%20a%20database.md)
 #### [Delete a database](https://github.com/quark-database/docs/blob/main/Database%20operations/1%20%E2%80%A2%20For%20databases/8%20%E2%80%A2%20Delete%20a%20database.md)
 
+### Operations for tables
+
 #### [Create a table](https://github.com/quark-database/docs/blob/main/Database%20operations/2%20%E2%80%A2%20For%20tables/1%20%E2%80%A2%20Create%20a%20table.md)
 #### [Rename a table](https://github.com/quark-database/docs/blob/main/Database%20operations/2%20%E2%80%A2%20For%20tables/2%20%E2%80%A2%20Rename%20a%20table.md)
 #### [Clone a table](https://github.com/quark-database/docs/blob/main/Database%20operations/2%20%E2%80%A2%20For%20tables/3%20%E2%80%A2%20Clone%20a%20table.md)
@@ -215,11 +223,15 @@ A user can perform operations on databases, tables, records, columns, variables,
 #### [Clear a table](https://github.com/quark-database/docs/blob/main/Database%20operations/2%20%E2%80%A2%20For%20tables/5%20%E2%80%A2%20Clear%20a%20table.md)
 #### [Delete a table](https://github.com/quark-database/docs/blob/main/Database%20operations/2%20%E2%80%A2%20For%20tables/6%20%E2%80%A2%20Delete%20a%20table.md)
 
+### Operations for records
+
 #### [Change records](https://github.com/quark-database/docs/blob/main/Database%20operations/3%20%E2%80%A2%20For%20records/1%20%E2%80%A2%20Change%20records.md)
 #### [Count records](https://github.com/quark-database/docs/blob/main/Database%20operations/3%20%E2%80%A2%20For%20records/2%20%E2%80%A2%20Count%20records.md)
 #### [Insert a record](https://github.com/quark-database/docs/blob/main/Database%20operations/3%20%E2%80%A2%20For%20records/3%20%E2%80%A2%20Insert%20a%20record.md)
 #### [Select records](https://github.com/quark-database/docs/blob/main/Database%20operations/3%20%E2%80%A2%20For%20records/4%20%E2%80%A2%20Select%20records.md)
 #### [Delete records](https://github.com/quark-database/docs/blob/main/Database%20operations/3%20%E2%80%A2%20For%20records/5%20%E2%80%A2%20Delete%20records.md)
+
+### Operations for columns
 
 #### [Create a column](https://github.com/quark-database/docs/blob/main/Database%20operations/4%20%E2%80%A2%20For%20columns/1%20%E2%80%A2%20Create%20a%20column.md)
 #### [Rename a column](https://github.com/quark-database/docs/blob/main/Database%20operations/4%20%E2%80%A2%20For%20columns/2%20%E2%80%A2%20Rename%20a%20column.md)
@@ -228,17 +240,23 @@ A user can perform operations on databases, tables, records, columns, variables,
 #### [List columns](https://github.com/quark-database/docs/blob/main/Database%20operations/4%20%E2%80%A2%20For%20columns/5%20%E2%80%A2%20List%20columns.md)
 #### [Delete a column](https://github.com/quark-database/docs/blob/main/Database%20operations/4%20%E2%80%A2%20For%20columns/6%20%E2%80%A2%20Delete%20a%20column.md)
 
+### Operations for variables
+
 #### [Create a variable](https://github.com/quark-database/docs/blob/main/Database%20operations/5%20%E2%80%A2%20For%20variables/1%20%E2%80%A2%20Create%20a%20variable.md)
 #### [Get a variable value](https://github.com/quark-database/docs/blob/main/Database%20operations/5%20%E2%80%A2%20For%20variables/2%20%E2%80%A2%20Get%20a%20variable%20value.md)
 #### [Set a variable value](https://github.com/quark-database/docs/blob/main/Database%20operations/5%20%E2%80%A2%20For%20variables/3%20%E2%80%A2%20Set%20a%20variable%20value.md)
 #### [List variables in a table](https://github.com/quark-database/docs/blob/main/Database%20operations/5%20%E2%80%A2%20For%20variables/4%20%E2%80%A2%20List%20variables%20in%20a%20table.md)
 #### [Delete a variable](https://github.com/quark-database/docs/blob/main/Database%20operations/5%20%E2%80%A2%20For%20variables/5%20%E2%80%A2%20Delete%20a%20variable.md)
 
+### Operations for tokens
+
 #### [Create a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/1%20%E2%80%A2%20Create%20a%20token.md)
 #### [Grant a permission to a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/2%20%E2%80%A2%20Grant%20a%20permission%20to%20a%20token.md)
 #### [Revoke a permission from a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/3%20%E2%80%A2%20Revoke%20a%20permission%20from%20a%20token.md)
 #### [Redefine permissions for a token](https://github.com/quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/4%20%E2%80%A2%20Redefine%20permissions%20for%20a%20token.md)
 #### [Delete a token](https://github.com.quark-database/docs/blob/main/Database%20operations/6%20%E2%80%A2%20For%20auth%20tokens/5%20%E2%80%A2%20Delete%20a%20token.md)
+
+### Operations for the cloud
 
 #### [Get a cloud name](https://github.com/quark-database/docs/blob/main/Database%20operations/7%20%E2%80%A2%20For%20a%20cloud/1%20%E2%80%A2%20Get%20a%20cloud%20name.md)
 #### [Rename a cloud](https://github.com/quark-database/docs/blob/main/Database%20operations/7%20%E2%80%A2%20For%20a%20cloud/2%20%E2%80%A2%20Rename%20a%20cloud.md)
